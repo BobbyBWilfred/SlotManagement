@@ -1,0 +1,168 @@
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #2a2a2a;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+            color: #f0a500;
+            text-align: center;
+        }
+
+        #dateSelect {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            color: #000;
+            background-color: #fff;
+            transition: border-color 0.3s ease;
+            width: 100%;
+        }
+
+        #dateSelect:focus {
+            border-color: #f0a500;
+            outline: none;
+        }
+
+        .slot-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .slot {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .slot:hover {
+            background-color: #f0a500;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        .slot.selected {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .slot.booked {
+            background-color: #333;
+            color: #888;
+            cursor: not-allowed;
+        }
+
+        .slot.booked:hover {
+            transform: none;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form input {
+            margin: 10px 0;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #000;
+        }
+
+        .form input:focus {
+            border-color: #f0a500;
+            outline: none;
+        }
+
+        .form button {
+            padding: 15px;
+            background-color: #f0a500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form button:hover {
+            background-color: #e08900;
+        }
+
+        .success-message {
+            margin: 20px 0;
+            color: #28a745;
+            font-size: 1.25rem;
+            display: none;
+            text-align: center;
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .form input, .form button {
+                font-size: 0.9rem;
+            }
+        }
