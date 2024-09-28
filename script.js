@@ -4,7 +4,7 @@ const slots = {
       { time: '9:15 AM - 9:30 AM', booked: false },
       { time: '9:30 AM - 9:45 AM', booked: false },
       { time: '9:45 AM - 10:00 AM', booked: false },
-      { time: '10:00 AM - 10:15 AM', booked: false },
+      { time: '10:00 AM - 10:15 AM', booked: false }, 
       { time: '10:15 AM - 10:30 AM', booked: false },
       { time: '10:30 AM - 10:45 AM', booked: false },
       { time: '10:45 AM - 11:00 AM', booked: false },
