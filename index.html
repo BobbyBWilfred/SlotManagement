@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init('G84bn843ghNqaXCb9');
+    })();
+    
+</script>
+<title>Slot Booking System</title>
+<div class="header">
+    Slot Booking System - Open Source Club
+</div>
+
+<div class="container fade-in">
+    <h2>Select a Date</h2>
+    <select id="dateSelect" required>
+        <option value="" disabled selected>Select a date</option>
+        <option value="2024-09-28">September 28, 2024</option>
+        <option value="2024-09-29">September 29, 2024</option>
+        <option value="2024-09-30">September 30, 2024</option>
+    </select>
+
+    <h2>Select a Time Slot</h2>
+    <div class="slot-box" id="slotBox">
+
+    </div>
+
+    <h2>Enter Your Details</h2>
+    <form class="form" id="bookingForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name">
+        <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email">
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required autocomplete="tel">
+        <input type="text" id="regno" name="regno" placeholder="Your Registration Number" required autocomplete="off">
+        <button type="submit">Book Slot</button>
+    </form>
+    
+
+    <div class="success-message" id="successMessage">
+        Slot successfully booked!
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2024 Open Source Club. All Rights Reserved.
+</div>
